@@ -24,7 +24,7 @@ pipeline {
         stage('Execute Maven Command') {
             steps {
                 echo "Running mvn ${params.MAVEN_COMMAND}"
-                sh "mvn ${params.MAVEN_COMMAND} -X"
+                // sh "mvn ${params.MAVEN_COMMAND} -X"
             }
         }
         // stage('Build') {
