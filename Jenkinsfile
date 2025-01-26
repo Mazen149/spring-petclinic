@@ -7,7 +7,7 @@ pipeline {
         MAVEN_OPTS = '-Xmx2048m'
     }
     parameters {
-        choice(name: 'MAVEN_COMMAND', choices: ['install', 'package', 'clean', 'test'], description: 'Select the Maven command to execute', defaultValue: 'install')
+        choice(name: 'MAVEN_COMMAND', choices: ['install', 'package', 'clean', 'test'], description: 'Select the Maven command to execute')
     }
     stages {
         stage('Hello') {
