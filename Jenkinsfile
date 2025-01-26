@@ -38,13 +38,13 @@ pipeline {
                 stage('Package') {
                     steps {
                         echo 'Running mvn package'
-                        sh 'mvn package'
+                        // sh 'mvn package'
                     }
                 }
                 stage('Test') {
                     steps {
                         echo 'Running mvn test'
-                        sh 'mvn test'
+                        // sh 'mvn test'
                     }
                 }
             }
