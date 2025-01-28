@@ -58,5 +58,33 @@ pipeline {
                 }
             }
         }
+
+        // stage('Deployment') {
+        //     steps {
+        //         script {
+        //             // Transfer file to remote server
+        //             sshPublisher(
+        //                 publishers: [
+        //                     sshPublisherDesc(
+        //                         configName: 'Mazen',
+        //                         transfers: [
+        //                             sshTransfer(
+        //                                 sourceFiles: 'myscript.py',
+        //                                 remoteDirectory: '/target/directory',
+        //                                 execCommand: 'python /target/directory/myscript.py'
+        //                             )
+        //                         ],
+        //                         verbose: true
+        //                     )
+        //                 ]
+        //             )
+        //         }
+        //     }
+        //     post {
+        //         failure {
+        //             echo 'Deployment failed'
+        //         }
+        //     }
+        // }
     }
 }
